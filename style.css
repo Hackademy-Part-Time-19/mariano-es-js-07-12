@@ -32,6 +32,45 @@
 
 }
 
+.presto {
+
+    background:linear-gradient( #ffffff, #ffffff);
+    background-repeat: no-repeat;
+    background-position: 0px 28px;
+    transition: 0.2s;
+
+}
+
+.presto:hover {
+
+    
+    animation: prest_anim;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+@keyframes prest_anim {
+    
+    0% {
+        background-position: 0px 28px;
+        color: white;
+    }   
+
+    50% {
+        background-position: 0px -28px;
+        color: rgb(251, 180, 99);
+    }
+
+    100% {
+        background-position: 0px 28px;
+        
+
+    }
+
+}
+
 
 
 @media screen and (max-width: 345px) {
@@ -50,6 +89,23 @@
         font-size: 15px !important;
 
 
+    }
+
+    
+    
+  }
+
+  @media screen and (max-width: 600px) {
+
+    
+
+    
+
+    .annunci_button {
+    
+       display: none !important;
+        
+        
     }
     
   }
