@@ -33,13 +33,65 @@
 }
 
 .presto {
-
+    
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
     background:linear-gradient( #ffffff, #ffffff);
     background-repeat: no-repeat;
     background-position: 0px 28px;
     transition: 0.2s;
 
 }
+
+
+
+.div_immagine {
+
+    height: 75%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(1, 1, 1);
+
+}
+
+.immagine_prod{
+
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.div_info_prod{
+
+    background-color:rgb(251, 180, 99);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 25%;
+    color: black;
+    padding: 10px 20px;
+    line-height: 0.5;
+    font-weight: 600;
+
+}
+
+
+.tipo_prod{
+
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    padding: 7px;
+    font-weight: 700;
+
+
+}
+
 
 .presto:hover {
 
@@ -50,6 +102,7 @@
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
+
 
 @keyframes prest_anim {
     
