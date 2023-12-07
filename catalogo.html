@@ -7,27 +7,28 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1f7ac7518d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
     
     
     
 </head>
 <body style="margin: 0px; background-color: rgb(41, 35, 31);">
     
-    <div style="width: 100%; height: 20vh;"  id="navbar">
+    <div style="width: 100%; height: 20vh;"  id="navbar_container">
         
-        <nav style="display: flex; flex-direction: row; justify-content: space-between;">
+        <nav class="navbar_">
             
             <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: white; margin: 45px 45px ;">
                 
-                <h5>Presto.it</h5>
+                <h5 class="col-6">Presto.it</h5>
                 
             </div>
             
             <div style="margin: 30px 30px;">
                 
-                <button style="border: 2px solid white; background-color: black; color: white; border-radius: 100px; margin-right:30px; padding: 10px 30px;">Annunci</button>
+                <button class="annunci_button" >Annunci</button>
                 
-                <button style="border: 2px solid rgb(251, 180, 99); background-color: rgb(251, 180, 99); color: black; border-radius: 100px; margin-right:30px; padding: 10px 30px;" >Registrati</button>
+                <button class="register_button" >Registrati</button>
                 
                 
             </div>
@@ -40,24 +41,51 @@
     
     <div style="width: 100%; height: 80vh; margin: 0px;" class="row">
         
+        <!-- V Articolo 1 V -->
+
         <div style="height: 764px; padding: 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
             
-            <div style="background-color: rgb(251, 180, 99); width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
+            <div style=" width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
                 
                 
-                <div style="height: 75%; width: 100%; border-top-left-radius: 20px; border-top-right-radius: 20px;">
+                <div style="height: 75%; width: 100%; border-top-left-radius: 20px; border-top-right-radius: 20px; background-color: rgb(1, 1, 1);">
+                    
                     
                     <img src="https://images1.vinted.net/t/01_024fd_9u6qnKp9fd2AX8xjwLibfsnR/f800/1680122033.jpeg?s=2d599890a4d57fb9e45557941a9bab8179c1643a" style="object-fit: contain; height: 100%; width: 100%; border-top-left-radius: 20px; border-top-right-radius: 20px;" alt="">
                     
+                    
                 </div>
+                
                 <div style="background-color:rgb(251, 180, 99); border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;height: 25%; color: black; padding: 10px 20px; line-height: 0.5; font-weight: 600;">
                     
                     <br>
-                    <p>Abito rosso</p>
-                    <p><i>pubblicato da <a href="">Alessandra09</a></i></p>
-                    <br><br>
-                    <span style="font-size: 15px;"><i>Abbigliamento&nbsp;&nbsp;</i></span><span style="font-size: 15px;"><i class="fa-solid fa-ruler"><b>&nbsp;M</b></i></span>
                     
+                    <button style="font-size: 15px; border-radius: 10px; background-color: white; border: none; padding: 7px; font-weight: 700;"><i><i class="fa-solid fa-shirt"></i>&nbsp;Moda e vestiti</i></button>
+                    
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <p style="font-weight: 800;">Abito rosso</p>
+                    <p class="link_account"><i>pubblicato da <a href=""  style="color: black; font-weight: 800; text-decoration: none; ">Alessandra09</a></i></p>
+                    
+                    <br>
+                    
+                    
+                    <div class="miscellaneous_bottom_card" style="display: flex; justify-content: space-between; padding: 0px 10px;">
+                        
+                        <div class="miscellaneous_bottom_card" ><i class="fa-solid fa-ruler"><b>&nbsp;M&nbsp;&nbsp;</b></i></div>
+                        
+                        <div>
+
+                            <span class="miscellaneous_bottom_card" style=" font-size: 25px;"><a title="Spedizione veloce" style="text-decoration: none; color: black;" class="fa-solid fa-truck-fast"></a></span>
+                            
+                            <span  class="miscellaneous_bottom_card" style="font-weight: 700; font-size: 30px;">&nbsp;€ 29,00</span>
+                            
+                        </div>
+                        
+                        
+                    </div>
                     
                     
                     
@@ -69,6 +97,61 @@
             
         </div>
         
+        <!-- V Articolo 2 V -->
+
+        <div style="height: 764px; padding: 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+            
+            <div style=" width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
+                
+                
+                <div style="height: 75%; width: 100%; border-top-left-radius: 20px; border-top-right-radius: 20px; background-color: rgb(1, 1, 1);">
+                    
+                    
+                    <img src="https://www.picclickimg.com/OM4AAOSw6N1fu4pj/playstation-4-slim-usata.webp" style="object-fit: contain; height: 100%; width: 100%; border-top-left-radius: 20px; border-top-right-radius: 20px;" alt="">
+                    
+                    
+                </div>
+                
+                <div style="background-color:rgb(251, 180, 99); border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;height: 25%; color: black; padding: 10px 20px; line-height: 0.5; font-weight: 600;">
+                    
+                    <br>
+                    
+                    <button style="font-size: 15px; border-radius: 10px; background-color: white; border: none; padding: 7px; font-weight: 700;"><i><i class="fa-solid fa-laptop"></i>&nbsp;Tech</i></button>
+                    
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <p style="font-weight: 800;">PS4 usata</p>
+                    <p class="link_account"><i>pubblicato da <a href=""  style="color: black; font-weight: 800; text-decoration: none; ">johnny_2</a></i></p>
+                    
+                    <br>
+                    
+                    
+                    <div class="miscellaneous_bottom_card" style="display: flex; justify-content: space-between; padding: 0px 10px;">
+                        
+                        <div class="miscellaneous_bottom_card"></div>
+                        
+                        <div>
+
+                            <span class="miscellaneous_bottom_card" style=" font-size: 25px;"><a title="Spedizione veloce" style="text-decoration: none; color: black;" class="fa-solid fa-truck-fast"></a></span>
+                            
+                            <span  class="miscellaneous_bottom_card" style="font-weight: 700; font-size: 30px;">&nbsp;€ 139,00</span>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+        </div>
         
         
     </div>
