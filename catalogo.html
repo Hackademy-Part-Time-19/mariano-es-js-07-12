@@ -12,9 +12,9 @@
     
     
 </head>
-<body style="margin: 0px; background-color: rgb(41, 35, 31);">
+<body style="margin: 0px; background-color: rgb(25, 25, 25);">
     
-    <div style="width: 100%; height: 15vh;"  id="navbar_container">
+    <div style="width: 100%; height: 25vh; background-image: linear-gradient(0deg, transparent,black);"  id="navbar_container">
         
         <nav class="navbar_">
             
@@ -23,6 +23,10 @@
                 <a href="" class="presto">Presto.it</a href="">
                     
                 </div>
+                
+                <div   style="position: relative;display: flex;justify-self: center; align-self: center; left: 5%;"><input placeholder="Cerca qui.." class="search_bar" type="text"></div>
+                
+                
                 
                 <div style="margin: 30px 30px;">
                     
@@ -33,19 +37,22 @@
                     
                 </div>
                 
+                <div class="menu" style="position: relative; display: none;justify-content :center; align-self: center;right: 10% ; color: white; z-index: 1;"><i class="fa-solid fa-bars"></i></div>
+                
             </nav>
             
         </div>
         
         <div style="display: flex; justify-content: center; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><h2>Ecco gli ultimi articoli.. <span style="font-size: 20px;">speriamo che ti piacciano!</span></h2></div>
         
+        
         <br>
         
-        <div id="art_container" style="width: 100%; height: 80vh; margin: 0px;" class="row">
+        <div id="art_container" style="width: 100%; margin: 0px;" class="row">
             
             <!-- V Articolo 1 V -->
             
-            <div onclick="layerAcquista(0)" style="height: 764px; padding: 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+            <div onclick="layerAcquista(0)" style="height: 764px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
                 
                 
                 <div  style=" width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
@@ -105,7 +112,7 @@
             
             <!-- V Articolo 2 V -->
             
-            <div onclick="layerAcquista(1)" style="height: 764px; padding: 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+            <div onclick="layerAcquista(1)" style="height: 764px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
                 
                 
                 
@@ -174,7 +181,7 @@
             
             <!-- V Articolo 3 V -->
             
-            <div onclick="layerAcquista(2)" style="height: 764px; padding: 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+            <div onclick="layerAcquista(2)" style="height: 764px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
                 
                 
                 
@@ -241,11 +248,9 @@
                 
             </div>
             
-            
             <!-- V Articolo 4 V -->
-            <!-- https://i.ebayimg.com/images/g/GAsAAOSwzVtfwrEk/s-l1200.webp -->
             
-            <div onclick="layerAcquista(3)" style="height: 764px; padding: 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+            <div onclick="layerAcquista(3)" style="height: 764px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
                 
                 
                 
@@ -311,8 +316,277 @@
                 
                 
             </div>
+
+            <!-- V Articolo 5 V -->
+            
+            <div onclick="layerAcquista(4)" style="height: 764px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+                
+                
+                
+                
+                
+                <div style=" width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
+                    
+                    <div  id="layer-4" style="display: flex; flex-direction: column; width: 100%; height: 100%; background-color: transparent; border-radius: 20px; transition: 0.2s;">
+                        
+                        <div id="button-acq-4" style=" top: 60%; justify-self: center; align-self: center; z-index: 1; display: block;opacity: 0; transition: 0.2s;"><button class="buy_button">Aggiungi al carrello</button></div>
+                        
+                        
+                        
+                        <div class="div_immagine" id="layer-image-prod-4">
+                            
+                            
+                            <img src="https://www.picclickimg.com/OM4AAOSw6N1fu4pj/playstation-4-slim-usata.webp" class="immagine_prod">
+                            
+                            
+                        </div>
+                        
+                        <div class="div_info_prod" id="layer-prod-4">
+                            
+                            <br>
+                            
+                            <button class="tipo_prod" ><i><i class="fa-solid fa-laptop"></i>&nbsp;Tech</i></button>
+                            
+                            <br>
+                            <br>
+                            <br>
+                            
+                            <p style="font-weight: 800;">PS4 usata</p>
+                            <p class="link_account"><i>pubblicato da <a href=""  style="color: black; font-weight: 800; text-decoration: none; ">johnny_2</a></i></p>
+                            
+                            <br>
+                            
+                            
+                            <div class="miscellaneous_bottom_card" style="display: flex; justify-content: space-between; padding: 0px 10px;">
+                                
+                                <div class="miscellaneous_bottom_card"></div>
+                                
+                                <div>
+                                    
+                                    <span class="miscellaneous_bottom_card" style=" font-size: 25px;"><a title="Spedizione veloce" style="text-decoration: none; color: black;" class="fa-solid fa-truck-fast"></a></span>
+                                    
+                                    <span  class="miscellaneous_bottom_card" style="font-weight: 700; font-size: 30px;">&nbsp;€ 209,00</span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+            <!-- V Articolo 6 V -->
+            
+            <div onclick="layerAcquista(5)" style="height: 764px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+                
+                
+                
+                
+                
+                <div style=" width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
+                    
+                    <div  id="layer-5" style="display: flex; flex-direction: column; width: 100%; height: 100%; background-color: transparent; border-radius: 20px; transition: 0.2s;">
+                        
+                        <div id="button-acq-5" style=" top: 60%; justify-self: center; align-self: center; z-index: 1; display: block;opacity: 0; transition: 0.2s;"><button class="buy_button">Aggiungi al carrello</button></div>
+                        
+                        
+                        
+                        <div class="div_immagine" id="layer-image-prod-5">
+                            
+                            
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfeNjbNFIjp7rgq2wD7SvdDWFm-ZpPQ77RbA&usqp=CAU" class="immagine_prod">
+                            
+                            
+                        </div>
+                        
+                        <div class="div_info_prod" id="layer-prod-5">
+                            
+                            <br>
+                            
+                            <button class="tipo_prod" ><i><i class="fa-solid fa-laptop"></i>&nbsp;Tech</i></button>
+                            
+                            <br>
+                            <br>
+                            <br>
+                            
+                            <p style="font-weight: 800;">Iphone XR</p>
+                            <p class="link_account"><i>pubblicato da <a href=""  style="color: black; font-weight: 800; text-decoration: none; ">Fede77</a></i></p>
+                            
+                            <br>
+                            
+                            
+                            <div class="miscellaneous_bottom_card" style="display: flex; justify-content: space-between; padding: 0px 10px;">
+                                
+                                <div class="miscellaneous_bottom_card"></div>
+                                
+                                <div>
+                                    
+                                    <span class="miscellaneous_bottom_card" style=" font-size: 25px;"><a title="Spedizione veloce" style="text-decoration: none; color: black;" class="fa-solid fa-truck-fast"></a></span>
+                                    
+                                    <span  class="miscellaneous_bottom_card" style="font-weight: 700; font-size: 30px;">&nbsp;€ 139,00</span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+            <!-- V Articolo 7 V -->
+            
+            <div onclick="layerAcquista(6)" style="height: 764px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+                
+                
+                
+                
+                
+                <div style=" width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
+                    
+                    <div  id="layer-6" style="display: flex; flex-direction: column; width: 100%; height: 100%; background-color: transparent; border-radius: 20px; transition: 0.2s;">
+                        
+                        <div id="button-acq-6" style=" justify-self: center; align-self: center; z-index: 1; display: block;opacity: 0; transition: 0.2s;"><button class="buy_button">Aggiungi al carrello</button></div>
+                        
+                        
+                        
+                        <div class="div_immagine" id="layer-image-prod-6">
+                            
+                            
+                            <img src="https://i.ebayimg.com/images/g/GAsAAOSwzVtfwrEk/s-l1200.webp" class="immagine_prod">
+                            
+                            
+                        </div>
+                        
+                        <div class="div_info_prod" id="layer-prod-6">
+                            
+                            <br>
+                            
+                            <button class="tipo_prod" ><i><i class="fa-solid fa-shirt"></i>&nbsp;Moda e vestiti</i></button>
+                            
+                            <br>
+                            <br>
+                            <br>
+                            
+                            <p style="font-weight: 800;">Borsa Prada</p>
+                            <p class="link_account"><i>pubblicato da <a href=""  style="color: black; font-weight: 800; text-decoration: none; ">Alessia89_</a></i></p>
+                            
+                            <br>
+                            
+                            
+                            <div class="miscellaneous_bottom_card" style="display: flex; justify-content: space-between; padding: 0px 10px;">
+                                
+                                <div class="miscellaneous_bottom_card"></div>
+                                
+                                <div>
+                                    
+                                    <span class="miscellaneous_bottom_card" style=" font-size: 25px;"><a title="Spedizione veloce" style="text-decoration: none; color: black;" class="fa-solid fa-truck-fast"></a></span>
+                                    
+                                    <span  class="miscellaneous_bottom_card" style="font-weight: 700; font-size: 30px;">&nbsp;€ 75,00</span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+            
             
         </div>
+        
+        <br>
+        
+        
+        
+        <div style="height: 20vh; width: 100%; background-image: linear-gradient(180deg, transparent,black);"></div>
+
+        <div class="footer" style="height: 100%; width: 100%; background-color: black; display: flex; flex-direction: row; justify-content: space-around;">
+            
+            <div style="display: flex; flex-direction: column; color: white;">
+                
+                <h5 style="align-self: center;">Aiuto e supporto</h5>
+                
+                <p>Chiamaci al 0100 300 300, disponibili <br>dal Lunedì al Venerdì, dalle 8.00 alle 17.00 <br> <br>
+                    Oppure contattaci per mail da <a href="">questo link.</a>
+                </p>
+                
+                
+            </div>
+
+            <br>
+
+            <div style="display: flex; flex-direction: column; color: white; align-items: center;">
+                
+                <h5 style="align-self: center;">Scorciatoie</h5>
+                
+                <a href="">Home</a>  
+                <a href="">Catalogo</a>  
+                <a href="">Chi siamo</a>     
+                <a href="">Contattaci</a>   
+                
+                
+            </div>
+
+            <br>
+            <br>
+
+            <div style="display: flex; flex-direction: column; color: white;">
+
+                <h5 style="align-self: center;">Lavora con noi</h5>
+                <p>Controlla le posizioni aperte presso <a href="">questo link.</a> </p>
+            
+            </div>
+
+            <br>
+
+            <div style="display: flex; flex-direction: column; color: white;">
+
+                <h5 style="align-self: center;">Informazioni legali</h5>
+                <p>P.Iva 371293109237100193</p>
+                <p>Sede legale presso Torino, Corso Inghilterra 98/b</p>
+            
+            </div>
+            
+    
+            
+        </div>
+        
+        
+        
         
         
         
