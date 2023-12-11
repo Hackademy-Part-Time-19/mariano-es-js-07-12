@@ -14,7 +14,24 @@
 </head>
 <body style="margin: 0px; background-color: rgb(25, 25, 25);">
     
-    <div style="width: 100%; height: 25vh; background-image: linear-gradient(0deg, transparent,black);"  id="navbar_container">
+    <!-- Menu card -->
+    <div id="menu_card" class="menu_card" style="position: fixed; display: none; height: 100vh ; width: 100%; background-color: black; justify-content: center; align-items: center; z-index: 10;">
+
+        <div style="position: absolute; top: 50px;"><i onclick="menu()" style="color: white; font-size: 30px;" class="fa-solid fa-xmark"></i></div>
+
+        <div style="position: relative;width: 300px; height: 300px;display: flex; flex-direction: column; color: white; justify-content: center; align-items: center; line-height: 4;">
+            
+            <button class="menu_button_reg" ><h2>Registrati</h2></button>
+            <button class="menu_button_acc" ><h2>Accedi</h2></button>
+            <button class="menu_button" ><h2>Home</h2></button>
+            <button class="menu_button" ><h2>Cerca</h2></button>
+            
+        
+        </div>
+    
+    </div>
+    
+    <div class="navbar_cont" style="width: 100%; height: 25vh; background-image: linear-gradient(0deg, transparent,black);"  id="navbar_container">
         
         <nav class="navbar_">
             
@@ -24,7 +41,11 @@
                     
                 </div>
                 
-                <div   style="position: relative;display: flex;justify-self: center; align-self: center; left: 5%;"><input placeholder="Cerca qui.." class="search_bar" type="text"></div>
+                <div   style="position: relative;display: flex;justify-self: center; align-self: center; left: 5%;">
+
+                    <input placeholder="Cerca qui.." class="search_bar" type="text">
+
+                </div>
                 
                 
                 
@@ -37,7 +58,7 @@
                     
                 </div>
                 
-                <div class="menu" style="position: relative; display: none;justify-content :center; align-self: center;right: 10% ; color: white; z-index: 1;"><i class="fa-solid fa-bars"></i></div>
+                <div class="menu"  style="position: relative; display: none;justify-content :center; align-self: center;right: 10% ; color: white; z-index: 1;"><i onclick="menu()" class="fa-solid fa-bars"></i></div>
                 
             </nav>
             

@@ -20,6 +20,8 @@
     
 }
 
+
+
 .buy_button {
 
     
@@ -50,6 +52,47 @@
     margin-right:30px;
     padding: 10px 30px;
     transition: 0.2s;
+}
+
+.menu_button_reg {
+
+    
+    border: none;
+    background-color: rgb(251, 180, 99);
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 40px;
+    transition: 0.2s;
+    margin: 10px;
+}
+
+.menu_button_acc {
+
+    border: none;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 40px;
+    transition: 0.2s;
+    margin: 10px;
+
+}
+
+.menu_button {
+
+    border: none;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 40px;
+    transition: 0.2s;
+    margin: 10px;
+
+
+
 }
 
 .presto {
@@ -218,14 +261,15 @@
 
     }
 
+
     
     
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1000px) {
 
     
-
+    
     
 
     .accedi_button {
