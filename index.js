@@ -95,7 +95,7 @@ async function filtraProdotti(prezzo,nome,tipo) {
                             <br>
                             <br>
                             
-                            <p style="font-weight: 800;">${updatedProducts[i].title}</p>
+                            <p style="font-weight: 800; line-height: 1;">${updatedProducts[i].title}</p>
                             <div class="link_account"><i>${updatedProducts[i].description}</i></div>
                             
                             <br>
