@@ -289,7 +289,16 @@
     
     .inputs {
 
-        flex-direction: column;
+        margin-top: 50px;
+        flex-direction: column !important;
+
+
+    }
+
+    .lan-text {
+
+
+        text-align: center;
 
 
     }

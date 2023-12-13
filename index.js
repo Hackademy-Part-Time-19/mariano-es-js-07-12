@@ -10,45 +10,63 @@ function linkCatalogo() {
 
     window.location.href = `catalogo.html?prezzo=${prezzo}&nome=${nome}&tipo=${tipo}`;
 
-    
-
 }
 
 window.addEventListener("load", function () {
 
     let url = new URL(window.location.href);
 
-    let prezzo = url.searchParams.get("prezzo");
-    let nome = url.searchParams.get("nome");
-    let tipo = url.searchParams.get("tipo");
-
-    filtraProdotti(prezzo,nome,tipo);
+    if(url.searchParams.has("tipo")) {
+        
+        let prezzo = url.searchParams.get("prezzo");
+        let nome = url.searchParams.get("nome");
+        let tipo = url.searchParams.get("tipo");
+        
+        getProdotti(prezzo,nome,tipo);
+    
+    }
 
 })
 
 
 
-async function filtraProdotti(prezzo,nome,tipo) {
+function getProdotti(prezzo,nome,tipo) {
 
-    const response = await fetch("https://fakestoreapi.com/products");
-    products = await response.json();
+    
+
+    fetch("https://fakestoreapi.com/products")
+        .then((response) => products = response.json())
+        .then ((data) => { 
+
+            products = data;
+
+            filtraProdotti(prezzo,nome,tipo)
+        
+        })
+        .catch(console.error)
+
+
+ }
+
+
+function filtraProdotti(prezzo,nome,tipo) {
 
     console.log(products)
     
     let updatedProducts = products.filter((prodotto) => {
 
         if (prezzo && nome && tipo) {
-            return prodotto.price < prezzo && prodotto.title === nome && prodotto.category === tipo;
+            return prodotto.price < prezzo && prodotto.title.startsWith(nome)  && prodotto.category === tipo;
         } else if (prezzo && nome) {
-            return prodotto.price < prezzo && prodotto.title === nome;
+            return prodotto.price < prezzo && prodotto.title.startsWith(nome);
         } else if (prezzo && tipo) {
             return prodotto.price < prezzo && prodotto.category === tipo;
         } else if (nome && tipo) {
-            return prodotto.title === nome && prodotto.category === tipo;
+            return prodotto.title.startsWith(nome) && prodotto.category === tipo;
         } else if (prezzo) {
             return prodotto.price < prezzo;
         } else if (nome) {
-            return prodotto.title === nome;
+            return prodotto.title.startsWith(nome);
         } else if (tipo) {
             return prodotto.category === tipo;
         } else {
@@ -58,6 +76,8 @@ async function filtraProdotti(prezzo,nome,tipo) {
 
 
     })
+
+    
 
     console.log(updatedProducts)
 
