@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo - Presto.it</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1f7ac7518d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./catalogo.js"></script>
+    <script src="./index.js"></script>
+    
+    
+</head>
+<body style="margin: 0px; background-color: rgb(25, 25, 25);">
+    
+    <!-- Menu card -->
+    <div id="menu_card" class="menu_card" style="position: fixed; display: none; height: 100vh ; width: 100%; background-color: black; justify-content: center; align-items: center; z-index: 10;">
+
+        <div style="position: absolute; top: 50px;"><i onclick="menu()" style="color: white; font-size: 30px;" class="fa-solid fa-xmark"></i></div>
+
+        <div style="position: relative;width: 300px; height: 300px;display: flex; flex-direction: column; color: white; justify-content: center; align-items: center; line-height: 4;">
+            
+            <button class="menu_button_reg" ><h2>Registrati</h2></button>
+            <button class="menu_button_acc" ><h2>Accedi</h2></button>
+            <button class="menu_button" ><h2>Home</h2></button>
+            <button class="menu_button" ><h2>Cerca</h2></button>
+            
+        
+        </div>
+    
+    </div>
+    
+    <div class="navbar_cont" style="width: 100%; height: 25vh; background-image: linear-gradient(0deg, transparent,black);"  id="navbar_container">
+        
+        <nav class="navbar_">
+            
+            <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: white; margin: 45px 45px ;">
+                
+                <a href="./landing_page.html" class="presto">Presto.it</a href="">
+                    
+                </div>
+                
+                <div   style="position: relative;display: flex;justify-self: center; align-self: center; left: 5%;">
+
+                    <input placeholder="Cerca qui.." class="search_bar" type="text">
+
+                </div>
+                
+                
+                
+                <div style="margin: 30px 30px;">
+                    
+                    <button class="accedi_button" >Accedi</button>
+                    
+                    <button class="register_button" >Registrati</button>
+                    
+                    
+                </div>
+                
+                <div class="menu"  style="position: relative; display: none;justify-content :center; align-self: center;right: 10% ; color: white; z-index: 1;"><i onclick="menu()" class="fa-solid fa-bars"></i></div>
+                
+            </nav>
+            
+        </div>
+        
+        <div id="item_container" style="width: 100%; margin: 0px; display: flex; flex-direction: row; height: 100vh;">
+            
+            <div style="display: flex; flex-direction: row; width: 65%; height: 100%;">
+
+                <div class="many_images" style="height: 100%; width: 10%; border-right: 2px solid rgba(255, 255, 255,0.7);border-top: 2px solid rgba(255, 255, 255,0.7) ; border-bottom: 2px solid rgba(255, 255, 255,0.7);display: flex; flex-direction: column; justify-content: space-around; background-color: black;">
+                    
+                    <div style="height: 15%; width: 100%;">
+                        
+                        <img id="item-image-1" style="object-fit: contain; width: 100%; height: 100%;" src="" alt="">
+                    
+                    </div>
+
+                    <div style="height: 15%; width: 100%;">
+                    
+                        <img id="item-image-2" style="object-fit: contain; width: 100%; height: 100%;" src="" alt="">
+
+                    </div>
+
+                    <div style="height: 15%; width: 100%;">
+                    
+                        <img id="item-image-3" style="object-fit: contain; width: 100%; height: 100%;" src="" alt="">
+                    
+                    </div>
+                    
+                    <div style="height: 15%; width: 100%;">
+                    
+                        <img id="item-image-4" style="object-fit: contain; width: 100%; height: 100%;" src="" alt="">
+                    
+                    </div>
+                
+                </div>
+
+                <div style="height: 100%; width: 90%; padding: 50px;">
+                
+                        <img id="item-main-image" style="object-fit: contain; width: 100%; height: 100%;" src="" alt="">
+
+                
+                </div>
+                
+
+
+            </div>
+
+            <div class="right-item" style="display: flex; background-color: black; width: 35%; border: 2px solid rgba(255, 255, 255,0.7); padding: 30px; color: rgba(255, 255, 255,0.7); justify-content: space-around; flex-direction: column; ">
+                
+                <div>
+
+                    <h1 class="text-item" id="item-title"></h1>
+
+                    <p class="text-item" style="overflow-y: scroll; height: 300px;" id="item-desc" ></p>
+
+                </div>
+
+                <div>
+
+                    <h1 id="item-price"></h1>
+
+                </div>
+
+                <div style="justify-content: center; align-items: center; width: 100%; display: flex;">
+
+                    <button style="text-align: center; border: none; background-color: rgba(255, 255, 255,0.7); padding: 10px;">Aggiungi al carrello</button>
+
+                </div>
+
+               
+
+            </div>
+            
+        </div>
+        
+        <br>
+        
+        
+        
+        <div style="height: 20vh; width: 100%; background-image: linear-gradient(180deg, transparent,black);"></div>
+
+        <div class="footer" style="height: 100%; width: 100%; background-color: black; display: flex; flex-direction: row; justify-content: space-around;">
+            
+            <div style="display: flex; flex-direction: column; color: white;">
+                
+                <h5 style="align-self: center;">Aiuto e supporto</h5>
+                
+                <p>Chiamaci al 0100 300 300, disponibili <br>dal Lunedì al Venerdì, dalle 8.00 alle 17.00 <br> <br>
+                    Oppure contattaci per mail da <a href="">questo link.</a>
+                </p>
+                
+                
+            </div>
+
+            <br>
+
+            <div style="display: flex; flex-direction: column; color: white; align-items: center;">
+                
+                <h5 style="align-self: center;">Scorciatoie</h5>
+                
+                <a href="">Home</a>  
+                <a href="">Catalogo</a>  
+                <a href="">Chi siamo</a>     
+                <a href="">Contattaci</a>   
+                
+                
+            </div>
+
+            <br>
+            <br>
+
+            <div style="display: flex; flex-direction: column; color: white;">
+
+                <h5 style="align-self: center;">Lavora con noi</h5>
+                <p>Controlla le posizioni aperte presso <a href="">questo link.</a> </p>
+            
+            </div>
+
+            <br>
+
+            <div style="display: flex; flex-direction: column; color: white;">
+
+                <h5 style="align-self: center;">Informazioni legali</h5>
+                <p>P.Iva 371293109237100193</p>
+                <p>Sede legale presso Torino, Corso Inghilterra 98/b</p>
+            
+            </div>
+            
+    
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+    </body>
+    </html>

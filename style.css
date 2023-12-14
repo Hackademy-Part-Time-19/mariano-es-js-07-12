@@ -295,6 +295,32 @@
 
     }
 
+    .many_images {
+
+        display: none !important; 
+
+
+    }
+
+    .text-item {
+
+        font-size: 20px !important;
+
+
+
+
+    }
+
+    .right-item {
+
+        width: 50% !important;
+
+
+
+
+    }
+
+
     .lan-text {
 
 

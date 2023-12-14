@@ -26,6 +26,26 @@ window.addEventListener("load", function () {
     
     }
 
+    if (url.searchParams.has("id")) {
+
+        let item_id = url.searchParams.get("id");
+
+        fetch("https://fakestoreapi.com/products/" + item_id)
+        .then((result) => result.json())
+        .then((data) => {
+
+            let item = data;
+
+            document.getElementById("item-title").innerHTML = `${item.title}`
+            document.getElementById("item-desc").innerHTML = `${item.description}`
+            document.getElementById("item-main-image").src = `${item.image}`
+            document.getElementById("item-price").innerHTML = `&euro;&nbsp;${item.price}`
+
+        })
+        .catch((error) => console.error)
+
+    }
+
 })
 
 function clickCard(id) {
@@ -67,7 +87,7 @@ function getProdotti(prezzo,nome,tipo) {
             filtraProdotti(prezzo,nome,tipo)
         
         })
-        .catch(console.error)
+        .catch((error) => console.error)
 
 
  }
