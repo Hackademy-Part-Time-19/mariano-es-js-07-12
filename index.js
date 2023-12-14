@@ -28,7 +28,31 @@ window.addEventListener("load", function () {
 
 })
 
+function clickCard(id) {
 
+    if (id == 0) {
+
+        window.location.href = `catalogo.html?prezzo=&nome=&tipo=women's clothing`;
+
+
+    } else if (id == 1) {
+
+        window.location.href = `catalogo.html?prezzo=&nome=&tipo=men's clothing`;
+
+
+    } else if (id == 2) {
+
+        window.location.href = `catalogo.html?prezzo=&nome=&tipo=electronics`;
+
+
+    } else if (id == 3) {
+
+        window.location.href = `catalogo.html?prezzo=&nome=&tipo=jewelery`;
+
+
+    }
+
+}
 
 function getProdotti(prezzo,nome,tipo) {
 
@@ -73,7 +97,7 @@ function filtraProdotti(prezzo,nome,tipo) {
             return true; 
         }
         
-
+        
 
     })
 
@@ -88,7 +112,7 @@ function filtraProdotti(prezzo,nome,tipo) {
         document.getElementById("art_container").innerHTML += 
         `
 
-            <div onclick="layerAcquista(${articoli_index})" style="height: 964px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+            <div onclick="layerAcquista(${updatedProducts[i].id})" style="height: 964px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
                 
                 
                 <div  style=" width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
@@ -152,4 +176,12 @@ function filtraProdotti(prezzo,nome,tipo) {
 
     }
 
+}
+
+function layerAcquista(id) {
+
+
+    window.location.href = `item.html?id=${id}`;
+
+    
 }
