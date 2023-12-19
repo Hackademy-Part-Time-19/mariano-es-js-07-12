@@ -76,7 +76,191 @@ function clickCard(id) {
 
 function getProdotti(prezzo,nome,tipo) {
 
+    document.getElementById("art_container").innerHTML = 
+        ` 
+        <div onclick="layerAcquista()" style="height: 964px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+                
+                
+        <div  style=" width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
+            
+            <div  id="layer-" style="display: flex; flex-direction: column; width: 100%; height: 100%; background-color: transparent; border-radius: 20px; transition: 0.2s;">
+                
+                <div id="button-acq-" style=" top: 60%; justify-self: center; align-self: center; z-index: 1; display: block;opacity: 0; transition: 0.2s;"><button class="buy_button">Aggiungi al carrello</button></div>
+                
+                <div style="z-index: auto;" id="layer-image-prod-" class="div_immagine_dummy">
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+                <div style="z-index: auto;" id="layer-prod-" class="div_info_prod_dummy">
+                    
+                    <br>
+                    
+                    
+                    
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <p style="font-weight: 800; line-height: 1;"></p>
+                    <div class="link_account"><i></i></div>
+                    
+                    <br>
+                    
+                    
+                    <div class="miscellaneous_bottom_card_dummy" style="display: flex; justify-content: space-between; padding: 0px 10px;">
+                        
+                        <div class="miscellaneous_bottom_card_dummy" ></div>
+                        
+                        <div>
+                            
+                            <span class="miscellaneous_bottom_card_dummy" style=" font-size: 25px;"></span>
+                            
+                            <span  class="miscellaneous_bottom_card_dummy" style="font-weight: 700; font-size: 30px;"></span>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div onclick="layerAcquista()" style="height: 964px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+                
+                
+        <div  style=" width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
+            
+            <div  id="layer-" style="display: flex; flex-direction: column; width: 100%; height: 100%; background-color: transparent; border-radius: 20px; transition: 0.2s;">
+                
+                <div id="button-acq-" style=" top: 60%; justify-self: center; align-self: center; z-index: 1; display: block;opacity: 0; transition: 0.2s;"><button class="buy_button">Aggiungi al carrello</button></div>
+                
+                <div style="z-index: auto;" id="layer-image-prod-" class="div_immagine_dummy">
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+                <div style="z-index: auto;" id="layer-prod-" class="div_info_prod_dummy">
+                    
+                    <br>
+                    
+                    
+                    
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <p style="font-weight: 800; line-height: 1;"></p>
+                    <div class="link_account"><i></i></div>
+                    
+                    <br>
+                    
+                    
+                    <div class="miscellaneous_bottom_card_dummy" style="display: flex; justify-content: space-between; padding: 0px 10px;">
+                        
+                        <div class="miscellaneous_bottom_card_dummy" ></div>
+                        
+                        <div>
+                            
+                            <span class="miscellaneous_bottom_card_dummy" style=" font-size: 25px;"></span>
+                            
+                            <span  class="miscellaneous_bottom_card_dummy" style="font-weight: 700; font-size: 30px;"></span>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    <div onclick="layerAcquista()" style="height: 964px; padding: 50px 20px; border-radius: 20px;" class="col-12 col-md-6 col-lg-4">
+                
+                
+        <div  style=" width: 100%; height: 100%; border-radius: 20px; cursor:pointer;display: flex; flex-direction: column;" >
+            
+            <div  id="layer-" style="display: flex; flex-direction: column; width: 100%; height: 100%; background-color: transparent; border-radius: 20px; transition: 0.2s;">
+                
+                <div id="button-acq-" style=" top: 60%; justify-self: center; align-self: center; z-index: 1; display: block;opacity: 0; transition: 0.2s;"><button class="buy_button">Aggiungi al carrello</button></div>
+                
+                <div style="z-index: auto;" id="layer-image-prod-" class="div_immagine_dummy">
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+                <div style="z-index: auto;" id="layer-prod-" class="div_info_prod_dummy">
+                    
+                    <br>
+                    
+                    
+                    
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <p style="font-weight: 800; line-height: 1;"></p>
+                    <div class="link_account"><i></i></div>
+                    
+                    <br>
+                    
+                    
+                    <div class="miscellaneous_bottom_card_dummy" style="display: flex; justify-content: space-between; padding: 0px 10px;">
+                        
+                        <div class="miscellaneous_bottom_card_dummy" ></div>
+                        
+                        <div>
+                            
+                            <span class="miscellaneous_bottom_card_dummy" style=" font-size: 25px;"></span>
+                            
+                            <span  class="miscellaneous_bottom_card_dummy" style="font-weight: 700; font-size: 30px;"></span>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
     
+
+            
+
+            
+        
+        
+        `
 
     fetch("https://fakestoreapi.com/products")
         .then((response) => products = response.json())
@@ -89,8 +273,10 @@ function getProdotti(prezzo,nome,tipo) {
         })
         .catch((error) => console.error)
 
+    
 
- }
+
+}
 
 
 function filtraProdotti(prezzo,nome,tipo) {
@@ -126,6 +312,8 @@ function filtraProdotti(prezzo,nome,tipo) {
     console.log(updatedProducts)
 
     let articoli_index = 0;
+
+    document.getElementById("art_container").innerHTML = ``;
 
     for (i = 0; i < updatedProducts.length; i++) {
 
@@ -205,3 +393,21 @@ function layerAcquista(id) {
 
     
 }
+
+document.addEventListener("scroll", function () {
+
+    let scrollTop = document.documentElement.scrollTop;
+    let totalPageHeight = document.documentElement.scrollHeight;
+    let windowHeight = document.documentElement.clientHeight;
+
+    let scrollPercentage = (scrollTop / (totalPageHeight - windowHeight)) * 100;
+
+    let nav = document.getElementById("navbar_container");
+
+    if (scrollPercentage > 40) {
+        nav.style.backgroundImage = "none";
+    } else {
+        nav.style.backgroundImage = "linear-gradient(0deg, transparent, black)";
+    }
+
+});

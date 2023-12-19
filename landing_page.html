@@ -15,9 +15,9 @@
 </head>
 <body style="margin: 0px; background-color: rgb(0, 0, 0);">
     
-        <!-- Menu card -->
-
-        <div id="menu_card" class="menu_card" style="position: fixed; display: none; height: 100vh ; width: 100%; background-color: black; justify-content: center; align-items: center; z-index: 10;">
+    <!-- Menu card -->
+    
+    <div id="menu_card" class="menu_card" style="position: fixed; display: none; height: 100vh ; width: 100%; background-color: black; justify-content: center; align-items: center; z-index: 10;">
         
         <div style="position: absolute; top: 50px;"><i onclick="menu()" style="color: white; font-size: 30px;" class="fa-solid fa-xmark"></i></div>
         
@@ -31,204 +31,252 @@
             
         </div>
         
-        </div>
+    </div>
     
-
-
-        <div class="navbar_cont" style="width: 100%; height: 25vh; background-image: linear-gradient(0deg, transparent,black); position: sticky;
-        top: 0;"  id="navbar_container">
-        
+    
+    
+    <div class="navbar_cont" style="width: 100%; height: 25vh; background-image: linear-gradient(0deg, transparent,black); position: sticky;
+    top: 0; z-index: 1000; transition: 0.3s !important;"  id="navbar_container">
+    
         <nav class="navbar_">
-            
-            <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: white; margin: 45px 45px ;">
-                
-                <a href="" class="presto">Presto.it</a href="">
-                    
-                </div>
-                
-                <div   style="position: relative;display: flex;justify-self: center; align-self: center; left: 5%;">
-                    
-                    
-                    
-                </div>
-                
-                
-                
-                <div style="margin: 30px 30px;">
-                    
-                    <button class="accedi_button" >Accedi</button>
-                    
-                    <button class="register_button" >Registrati</button>
-                    
-                    
-                </div>
-                
-                <div class="menu"  style="position: relative; display: none;justify-content :center; align-self: center;right: 10% ; color: white; z-index: 1;"><i onclick="menu()" class="fa-solid fa-bars"></i></div>
-                
-            </nav>
-            
-        </div>
         
-        <div style="z-index: -100; position: absolute; top: 0px; width: 100%;height: 100%; object-fit: cover; background-image: url(https://static2.iodonna.it/wp-content/uploads/2021/09/Ray-Ban-Stories-Lifestyle1.jpg?v=1755932);">
+        <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: white; margin: 45px 45px ;">
             
-           <div style="height: 100vh; width: 100%; display: flex; background-color: rgba(21, 21, 21, 0.7);"></div>
-            
-
-            
-
-        </div>
-
-        
-
-        <div style="color: white; display: flex; flex-direction: column; align-items: center;position: relative; height: 709px;">
-
-            
-
-            <h1 class="lan-text" >Ciò che cerchi ad un prezzo basso e in un unico posto.</h1>
-
-            <h3 class="lan-text" >Presto! Imposta i filtri e inizia a fare affari!</h3>
-            
-            <div class="inputs" style="display: flex; flex-direction: row;">
-
-                <select style="width: 200px; height: 40px; margin: 10px; border: none;" name="1" id="inputTipo">
-
-                    <option value="men's clothing">Moda uomo</option>
-                    <option value="women's clothing">Moda donna</option>
-                    <option value="electronics">Elettronica</option>
-                    <option value="jewelery">Gioielleria</option>
-
-                </select>
-
-                <select  style="width: 200px; height: 40px; margin: 10px; border: none;" name="2" id="inputPrezzo">
-
-                    <option value="100">Sotto i 100 &euro;</option>
-                    <option value="200">Sotto i 200 &euro;</option>
-                    <option value="9999999">Oltre i 200 &euro;</option>
-
-                </select>
-
-                <input id="inputNome" style="width: 200px; height: 40px; margin: 10px; border: none;" type="text">
-
-                <button onclick="linkCatalogo()" style="width: 200px; height: 40px; margin: 10px; border: none;">Cerca</button>
-        
+            <a href="" class="presto">Presto.it</a href="">
+                
             </div>
             
-            <div style="width: 100%; height: 300px; background-image: linear-gradient(180deg, transparent,black); position: absolute; bottom: 0px;"></div>
+            <div   style="position: relative;display: flex;justify-self: center; align-self: center; left: 5%;">
+                
+                
+                
+            </div>
             
-
-        </div>  
-
-        
-        
-        <div class="row" style="position: relative; width: 100%; justify-content: space-evenly; margin: 0px;"    >
-
             
-
-                <div  class="col-12 col-lg-3" style="display: flex; flex-direction: column; width: 450px; height: 450px; background-color: black;border: 1px solid rgba(255, 255, 255, 0.7); justify-content: center; align-items: center; color: rgba(255, 255, 255, 0.7);">
-                    
-                    <h2 style="text-align: center;">Abbigliamento donna</h2>
-                    <p>Maglie, vestiti, costumi e molto altro..</p>
-                    <p onclick="clickCard(0)" style="position: relative;;align-items:end; top: 30px; cursor: pointer;"><i>Guarda ora le offerte > </i></p>
+            
+            <div style="margin: 30px 30px;">
                 
-                </div>
-
-                <div  class="col-12 col-lg-3" style="display: flex; flex-direction: column; width: 450px; height: 450px; background-color: black;border: 1px solid rgba(255, 255, 255, 0.7); justify-content: center; align-items: center; color: rgba(255, 255, 255, 0.7);">
+                <button class="accedi_button" >Accedi</button>
                 
-                    <h2 style="text-align: center;">Abbigliamento uomo</h2>
-                    <p>Camicie, giacche, pantaloni e molto altro..</p>
-                    <p onclick="clickCard(1)" style="position: relative;;align-items:end; top: 30px; cursor: pointer;"><i>Guarda ora le offerte > </i></p>
+                <button class="register_button" >Registrati</button>
                 
-                </div>
-
-                <div  class="col-12 col-lg-3" style="display: flex; flex-direction: column; width: 450px; height: 450px; background-color: black;border: 1px solid rgba(255, 255, 255, 0.7); justify-content: center; align-items: center; color: rgba(255, 255, 255, 0.7);">
                 
-                    <h2 style="text-align: center;">Elettronica e tech</h2>
-                    <p>Usati garantiti dai nostri esperti.</p>
-                    <p onclick="clickCard(2)" style="position: relative;;align-items:end; top: 30px; cursor: pointer;"><i>Guarda ora le offerte > </i></p>
-                
-                </div>
-
-                <div  class="col-12 col-lg-3" style="display: flex; flex-direction: column; width: 450px; height: 450px; background-color: black;border: 1px solid rgba(255, 255, 255, 0.7); justify-content: center; align-items: center; color: rgba(255, 255, 255, 0.7);">
-                
-                    <h2 style="text-align: center;">Gioielli e accessori</h2>
-                    <p>A prezzi accessibili</p>
-                    <p onclick="clickCard(3)" style="position: relative;;align-items:end; top: 30px; cursor: pointer;"><i>Guarda ora le offerte > </i></p>
-                
-                </div>
-                
+            </div>
+            
+            <div class="menu"  style="position: relative; display: none;justify-content :center; align-self: center;right: 10% ; color: white; z-index: 1;"><i onclick="menu()" class="fa-solid fa-bars"></i></div>
+            
+        </nav>
+        
+    </div>
     
-
-
-        </div>
-
+    
+    
+    <div style="z-index: -100; position: absolute; top: 0px; width: 100%;height: 100%; object-fit: cover; background-image: url(https://static2.iodonna.it/wp-content/uploads/2021/09/Ray-Ban-Stories-Lifestyle1.jpg?v=1755932);">
         
-       
-        
+        <div style="height: 100vh; width: 100%; display: flex; background-color: rgba(21, 21, 21, 0.7);"></div>
         
         
         
         
-        <div class="footer" style="height: 500px; width: 100%; background-image: linear-gradient(180deg, transparent,black); display: flex; flex-direction: row; justify-content: space-around;">
+    </div>
+    
+    
+    
+    <div style="color: white; display: flex; flex-direction: column; align-items: center;position: relative; height: 709px;">
+        
+        
+        
+        <h1 class="lan-text" >Ciò che cerchi ad un prezzo basso e in un unico posto.</h1>
+        
+        <h3 class="lan-text" >Presto! Imposta i filtri e inizia a fare affari!</h3>
+        
+        <div class="inputs" style="display: flex; flex-direction: row;">
             
-            <div style="display: flex; flex-direction: column; color: white; justify-content: end;">
+            <select style="width: 200px; height: 40px; margin: 10px; border: none;" name="1" id="inputTipo">
                 
-                <h5 style="align-self: center;">Aiuto e supporto</h5>
+                <option value="men's clothing">Moda uomo</option>
+                <option value="women's clothing">Moda donna</option>
+                <option value="electronics">Elettronica</option>
+                <option value="jewelery">Gioielleria</option>
                 
-                <p>Chiamaci al 0100 300 300, disponibili <br>dal Lunedì al Venerdì, dalle 8.00 alle 17.00 <br> <br>
-                    Oppure contattaci per mail da <a href="">questo link.</a>
-                </p>
-                
-                
-            </div>
+            </select>
             
-            <br>
+            <select  style="width: 200px; height: 40px; margin: 10px; border: none;" name="2" id="inputPrezzo">
+                
+                <option value="100">Sotto i 100 &euro;</option>
+                <option value="200">Sotto i 200 &euro;</option>
+                <option value="9999999">Oltre i 200 &euro;</option>
+                
+            </select>
             
-            <div style="display: flex; flex-direction: column; color: white; align-items: center;justify-content: end;">
-                
-                <h5 style="align-self: center;">Scorciatoie</h5>
-                
-                <a href="">Home</a>  
-                <a href="">Catalogo</a>  
-                <a href="">Chi siamo</a>     
-                <a href="">Contattaci</a>   
-                
-                
-            </div>
+            <input id="inputNome" style="width: 200px; height: 40px; margin: 10px; border: none;" type="text">
             
-            <br>
-            <br>
-            
-            <div style="display: flex; flex-direction: column; color: white;justify-content: end;">
-                
-                <h5 style="align-self: center;">Lavora con noi</h5>
-                <p>Controlla le posizioni aperte presso <a href="">questo link.</a> </p>
-                
-            </div>
-            
-            <br>
-            
-            <div style="display: flex; flex-direction: column; color: white;justify-content: end;">
-                
-                <h5 style="align-self: center;">Informazioni legali</h5>
-                <p>P.Iva 371293109237100193</p>
-                <p>Sede legale presso Torino, Corso Inghilterra 98/b</p>
-                
-            </div>
-            
-            
+            <button onclick="linkCatalogo()" style="width: 200px; height: 40px; margin: 10px; border: none;">Cerca</button>
             
         </div>
         
+        <div style="width: 100%; height: 300px; background-image: linear-gradient(180deg, transparent,black); position: absolute; bottom: 0px;"></div>
+        
+        
+    </div>  
+    
+    
+    
+    <div class="row" style="position: relative; width: 100%; justify-content: space-evenly; margin: 0px;"    >
+        
+        
+        
+        <div  class="col-12 col-lg-6" style="display: flex; flex-direction: row; width: 900px; height: 450px; background-color: black;border: 1px solid rgba(255, 255, 255, 0.7); justify-content: space-evenly; align-items: center; color: rgba(255, 255, 255, 0.7); margin: 10px 0px;">
+            
+            <div>
+                
+                <h2 style="text-align: center;">Abbigliamento donna</h2>
+                <p style="text-align: center;">Maglie, vestiti, costumi e molto altro..</p>
+                <p onclick="clickCard(0)" style="position: relative;;align-items:end; top: 30px; cursor: pointer; text-align: right;"><i>Guarda ora le offerte > </i></p>
+                
+            </div>
+            
+            <div>
+                
+                <img style="object-fit: cover; width: 150px; height: 400px;" src="https://m.media-amazon.com/images/I/71L+MCiCiiL._AC_UY580_.jpg" alt="">
+                
+            </div>
+            
+            
+        </div>
+        
+        <div  class="col-12 col-lg-6" style="display: flex; flex-direction: row; width: 900px; height: 450px; background-color: black;border: 1px solid rgba(255, 255, 255, 0.7); justify-content: space-evenly; align-items: center; color: rgba(255, 255, 255, 0.7); margin: 10px 0px;">
+            
+            <div>
+                
+                <h2 style="text-align: center;">Abbigliamento uomo</h2>
+                <p style="text-align: center;" >Camicie, giacche, pantaloni e molto altro..</p>
+                <p onclick="clickCard(1)" style="position: relative;;align-items:end; top: 30px; cursor: pointer; text-align: right;"><i>Guarda ora le offerte > </i></p>
+                
+            </div>
+            
+            <div>
+                
+                <img style="object-fit: cover; width: 150px; height: 400px;" src="https://i.ebayimg.com/images/g/vJkAAOSwF0NcMp0V/s-l1600.jpg" alt="">
+                
+            </div>
+            
+            
+        </div>
+        
+        <div  class="col-12 col-lg-6" style="display: flex; flex-direction: row; width: 900px; height: 450px; background-color: black;border: 1px solid rgba(255, 255, 255, 0.7); justify-content: space-evenly; align-items: center; color: rgba(255, 255, 255, 0.7); margin: 10px 0px;">
+            
+            <div>
+                
+                <h2 style="text-align: center;">Elettronica e tech</h2>
+                <p style="text-align: center;">Usati garantiti dai nostri esperti.</p>
+                <p onclick="clickCard(2)" style="position: relative;;align-items:end; top: 30px; cursor: pointer;text-align: right;"><i>Guarda ora le offerte > </i></p>
+                
+            </div>
+            
+            <div>
+                
+                <img style="object-fit: cover; width: 150px; height: 400px;" src="https://cdn.dday.it/system/uploads/news/main_image/28353/main_iphonexr01.jpg" alt="">
+                
+            </div>
+            
+            
+            
+        </div>
+        
+        <div  class="col-12 col-lg-6" style="display: flex; flex-direction: row; width: 900px; height: 450px; background-color: black;border: 1px solid rgba(255, 255, 255, 0.7); justify-content: space-evenly; align-items: center; color: rgba(255, 255, 255, 0.7); margin: 10px 0px;">
+            
+            <div>   
+                
+                <h2 style="text-align: center;">Gioielli e accessori</h2>
+                <p style="text-align: center;">A prezzi accessibili</p>
+                <p onclick="clickCard(3)" style="position: relative;;align-items:end; top: 30px; cursor: pointer;text-align: right;"><i>Guarda ora le offerte > </i></p>
+                
+            </div>
+            
+            <div>
+                
+                <img style="object-fit: cover; width: 150px; height: 400px;" src="https://static.wixstatic.com/media/d7b54a_2eda4ce4841940f182c5d76b912290d2~mv2.jpg/v1/fill/w_560,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/d7b54a_2eda4ce4841940f182c5d76b912290d2~mv2.jpg" alt="">
+                
+            </div>
+            
+            
+            
+        </div>
         
         
         
         
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="footer" style="height: 500px; width: 100%; background-image: linear-gradient(180deg, transparent,black); display: flex; flex-direction: row; justify-content: space-around;">
+        
+        <div style="display: flex; flex-direction: column; color: white; justify-content: end;">
+            
+            <h5 style="align-self: center;">Aiuto e supporto</h5>
+            
+            <p>Chiamaci al 0100 300 300, disponibili <br>dal Lunedì al Venerdì, dalle 8.00 alle 17.00 <br> <br>
+                Oppure contattaci per mail da <a href="">questo link.</a>
+            </p>
+            
+            
+        </div>
+        
+        <br>
+        
+        <div style="display: flex; flex-direction: column; color: white; align-items: center;justify-content: end;">
+            
+            <h5 style="align-self: center;">Scorciatoie</h5>
+            
+            <a href="">Home</a>  
+            <a href="">Catalogo</a>  
+            <a href="">Chi siamo</a>     
+            <a href="">Contattaci</a>   
+            
+            
+        </div>
+        
+        <br>
+        <br>
+        
+        <div style="display: flex; flex-direction: column; color: white;justify-content: end;">
+            
+            <h5 style="align-self: center;">Lavora con noi</h5>
+            <p>Controlla le posizioni aperte presso <a href="">questo link.</a> </p>
+            
+        </div>
+        
+        <br>
+        
+        <div style="display: flex; flex-direction: column; color: white;justify-content: end;">
+            
+            <h5 style="align-self: center;">Informazioni legali</h5>
+            <p>P.Iva 371293109237100193</p>
+            <p>Sede legale presso Torino, Corso Inghilterra 98/b</p>
+            
+        </div>
         
         
         
-        
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        
-    </body>
-    </html>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>
